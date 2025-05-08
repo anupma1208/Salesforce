@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Account Search",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "oF4SX-Um-EyrFuCNaHmUeQ",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/oF4SX-Um-EyrFuCNaHmUeQ",
+  "ParentRef": "WbQuJRNUSE-nX4JPHia9ag/U_d1ZoKsB06iOaCUSsI1qQ",
+  "Created": "2025-04-29T07:04:37.5699731Z",
+  "Updated": "2025-04-29T07:04:37.5699731Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

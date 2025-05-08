@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2yjJlIXs9EaQBaQ_rbS4eQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HKlnNEAT/view" CVScreenId="ef0845c1-f321-4541-863c-ad0464ef36b2" DesignTimeRectangle="1011, 329, 20, 20" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='LABEL' class='slds-radio__label uiLabel' innertext='Choose Existing Account' /&gt;&lt;webctrl class='slds-radio_faux' tag='SPAN' parentclass='slds-radio__label uiLabel' parentid='content_2462:0' /&gt;" Guid="9265d5a0-edf6-45f0-b5bc-c7d1836cd473" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LPOAjc TEWb | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="10816cbacdfae77bd1aa277d0549eaf2.png" xmlns="">0-m3awJSvcUexWP9B_XLN0g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

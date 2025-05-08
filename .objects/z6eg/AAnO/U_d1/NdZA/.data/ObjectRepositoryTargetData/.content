@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qIQu6_pOU0WFBjG-qpr2VQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HKlnNEAT/view" CVScreenId="25f49e71-1d9b-4a9c-8ae7-a610d05f2870" DesignTimeRectangle="1491, 875, 98, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' aaname='Convert' /&gt;" Guid="5166a88d-aa20-44f2-98c3-9536c41c48d1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LPOAjc TEWb | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8d6245c085d205308adedd8507d88307.png" xmlns="">0Pz7jLImedEOdlCOb6kK6qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

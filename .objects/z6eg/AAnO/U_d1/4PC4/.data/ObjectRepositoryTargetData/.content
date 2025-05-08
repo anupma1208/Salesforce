@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iAz41c-E8UCqUTggDO-7rQ" Reference="WbQuJRNUSE-nX4JPHia9ag/4PC4OkwFm0a--jIQDrJ1YQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/o/Lead/pipelineInspection" CVScreenId="878afb0b-e216-42c1-9b22-3bcf7081110c" DesignTimeRectangle="129, 860, 89, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/runtime_pipeline_inspectorPipelineInspectorHome/runtime_pipeline_inspectorPipelineInspectorRecordsView:recordsView/auraIf/auraIf/runtime_pipeline_inspectorPipelineInspectorCommonList:list' tag='RUNTIME_PIPELINE_INSPECTOR-PIPELINE-INSPECTOR-COMMON-LIST' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='LPOAjc TEWb' tableRow='6' tag='SPAN' /&gt;" Guid="18ed7aa6-2c96-4ad5-90c5-4d1ba687285f" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lead Intelligence View | Leads | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="89d9f69f-b7e7-433d-82a7-fe240bb41e7e" DesignTimeRectangle="708, 859, 43, 20" ElementType="Text" Guid="aeafe4e9-3bf9-4ea4-b8ad-06c8b3b7b10c" SearchSteps="Selector">
+            <Target.FullSelectorArgument>
+              <p:InArgument x:TypeArguments="x:String">
+                <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='SPAN' tableCol='5' /&gt;", CompanyName)</p:CSharpValue>
+              </p:InArgument>
+            </Target.FullSelectorArgument>
+          </Target>
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fbd0b45950ca1383bd699f1ed524cf67.png" xmlns="">0jBWvJpY9-EKQGDrRylfh1A</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="qucgU" Name="CompanyName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

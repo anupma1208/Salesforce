@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_w2I-dO_D0eAdWTCFM48jQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HKlnNEAT/view" CVScreenId="05d185a5-f063-431d-a984-63b701659261" DesignTimeRectangle="1538, 411, 18, 18" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiModal:modal/runtime_sales_leadConvertDesktop/runtime_sales_leadConvertSectionDesktop/runtime_sales_leadConvertMatchPanelDesktop/auraIf/forceSearchInputLookupDesktop:inputLookup/lightningIcon' tag='LIGHTNING-ICON' /&gt;&lt;webctrl tag='svg' /&gt;" Guid="723f6de2-6bd1-4e29-a0af-b8f2cc0213cc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LPOAjc TEWb | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1ced332a745fd23b86b9686a2f92690b.png" xmlns="">0uTSlWija206-EPAW82st7A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

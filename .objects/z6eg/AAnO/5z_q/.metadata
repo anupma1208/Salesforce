@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Quotes  Salesforce",
+  "Type": "Screen",
+  "Id": "5z_qvCi9Xk-E8ZN8lSPngw",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/5z_qvCi9Xk-E8ZN8lSPngw",
+  "ParentRef": "WbQuJRNUSE-nX4JPHia9ag/AAnOfLsLH0eD3rBMJa24KA",
+  "Created": "2025-04-29T10:54:29.9123926Z",
+  "Updated": "2025-04-29T10:54:29.9123926Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

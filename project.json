@@ -1,0 +1,91 @@
+{
+  "name": "TestAutomationProject21",
+  "projectId": "3b1feca9-7c96-42e5-8959-4c95c93864bb",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "ReporterForUiPath.Activities": "[3.0.1]",
+    "UiPath.IntegrationService.Activities": "[1.14.0]",
+    "UiPath.Salesforce.Activities": "[1.9.8]",
+    "UiPath.Salesforce.IntegrationService.Activities": "[6.1.2]",
+    "UiPath.SalesforceMarketingCloud.IntegrationService.Activities": "[5.0.7]",
+    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.11]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.9.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2cfce2a2-1e65-4ad9-86b9-c925ecb09c51",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e744e7bd-70b5-4899-8ebb-25cdaffa7218",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\Account.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "afb29fbb-16b5-4ee0-ba52-b0a53d677a1b",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\Lead.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5d977153-bb52-4154-aa7d-39c26c3cefd0",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\Account - Copy (1).xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "entryPoints": [
+    {
+      "filePath": "Testcases\\Account.xaml",
+      "uniqueId": "fe4a3690-3e21-4d8e-a534-4c1fc36a57b6",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

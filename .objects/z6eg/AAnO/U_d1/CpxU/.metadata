@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Leads",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "CpxUV9DY4kaKoMUTD1Q0VQ",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/CpxUV9DY4kaKoMUTD1Q0VQ",
+  "ParentRef": "WbQuJRNUSE-nX4JPHia9ag/U_d1ZoKsB06iOaCUSsI1qQ",
+  "Created": "2025-04-29T06:44:46.2637481Z",
+  "Updated": "2025-04-29T06:44:46.2637481Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

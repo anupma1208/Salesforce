@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XRYQ5lKfnEOazzwumcenJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HNHpaEAH/view" CVScreenId="e3367415-492e-4d2b-9d8c-43450c78692f" DesignTimeRectangle="1265, 638, 33, 30" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="2ede5114-d879-4ee4-ac81-7ecf309e1832" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='A' aaname='{0}-' class=' outputLookupLink slds-truncate outputLookupLink-006ak00000B5X53AAF-84:12763;a forceOutputLookup' /&gt;", CompanyName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.ScopeSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;html app='chrome.exe' title='{0} {0} | Lead | Salesforce' /&gt;", CompanyName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.ScopeSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="2ca535a67945d0b3f7f4e52936fb3a7f.png" xmlns="">0lsNpnjiGaUidHfLaBkyiig</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="KL" Name="CompanyName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

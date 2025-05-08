@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Lead Intelligence View  Leads  Salesfo",
+  "Type": "Screen",
+  "Id": "U_d1ZoKsB06iOaCUSsI1qQ",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/U_d1ZoKsB06iOaCUSsI1qQ",
+  "ParentRef": "WbQuJRNUSE-nX4JPHia9ag/AAnOfLsLH0eD3rBMJa24KA",
+  "Created": "2025-04-29T06:40:14.8717533Z",
+  "Updated": "2025-04-29T06:40:14.8717533Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

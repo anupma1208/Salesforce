@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Lead Intelligence View  Leads  Salesforce",
+  "Type": "App",
+  "Id": "z6ege-XSekK0N6IEMv82Gg",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/z6ege-XSekK0N6IEMv82Gg",
+  "Created": "2025-04-29T06:40:14.7199647Z",
+  "Updated": "2025-04-29T06:40:14.7199647Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

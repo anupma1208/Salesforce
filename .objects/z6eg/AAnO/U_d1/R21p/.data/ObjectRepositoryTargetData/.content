@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1X_1J9qz9U6iNP4nO7Kq0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HNBVdEAP/view" CVScreenId="456eb607-3eba-4ecb-adaa-188d0399bb46" DesignTimeRectangle="1371, 677, 126, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' aaname='TX_demoAccount' class=' outputLookupLink slds-truncate outputLookupLink-001ak00000BgKC6AAN-5:2456;a forceOutputLookup' innertext='TX_demoAccount' parentclass='slds-item_detail slds-truncate recordCell recordCellDetail' parentid='content_55:2327;a' visibleinnertext='TX_demoAccount' /&gt;" Guid="e90efe3f-ce4f-43cd-854b-7cfd6dd14f63" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EmCzoM tzQo | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="456eb607-3eba-4ecb-adaa-188d0399bb46" DesignTimeRectangle="1265, 676, 106, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Account Name' sfl-path='uiPanelManager2/uiModal:modal/runtime_sales_leadConvertedConfirmationDesktop:leadConverted/forceRecordLayoutBroker/rlOpportunityVIEWCOMPACTRuntime_sales_lead_convertedConfirmationDesktop_107059363230325a4d4b47584168393657484b4c744d673d3dC/forceListRecordItem/auraHtml' tag='DIV' /&gt;" Guid="fe3addfb-7771-4e4c-874f-15857b45f3bf" SearchSteps="Selector" />
+          <Target CVScreenId="456eb607-3eba-4ecb-adaa-188d0399bb46" DesignTimeRectangle="1189, 564, 340, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/uiModal:modal/runtime_sales_leadConvertedConfirmationDesktop:leadConverted/forceRecordLayoutBroker/rlOpportunityVIEWCOMPACTRuntime_sales_lead_convertedConfirmationDesktop_107059363230325a4d4b47584168393657484b4c744d673d3dC/runtime_sales_leadConvertedCardStencilDesktop:convertedCardStencilDesktop/auraHtml' tag='H3' /&gt;" Guid="4082fc08-cdc0-4503-9773-aaf1e18a73c1" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7dfb9568f451e904bcce3cce2d54200a.png" xmlns="">0Zmp6h5wKbE24NKakSj3HiA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

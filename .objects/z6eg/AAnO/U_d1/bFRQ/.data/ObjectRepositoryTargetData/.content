@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oUo5y01tUkGvqaeqUvXeAA" Reference="WbQuJRNUSE-nX4JPHia9ag/bFRQRQamWEqA41G6EZA9gQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HKlnNEAT/view" CVScreenId="852368d8-27f8-43b6-9b8c-299d21770326" DesignTimeRectangle="1669, 515, 178, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2/flexipageComponent3/runtime_sales_leadPathAssistant/runtime_sales_pathassistantPathAssistant:path/runtime_sales_pathassistantPathAssistantCard/runtime_sales_pathassistantPathAssistantHeader:header/auraIf/uiOutputText:stepCompleteButtonText/auraHtml:span' tag='SPAN' /&gt;" Guid="7876e93f-a2de-4dd0-bf14-e2ae19108ee7" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LPOAjc TEWb | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="852368d8-27f8-43b6-9b8c-299d21770326" DesignTimeRectangle="1614, 514, 260, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl sfl-path='oneOne/lafAppLayoutHost:host/navexDesktopLayoutContainer/navexContentRegionNavContainer:contentRegionNavContainer/navexStandardManager/lafSinglePaneWindowManager:contentManager/lafPageHost/oneRecordHomeFlexipage2Wrapper/oneRecordHomeFlexipage2:recordHomeFlexipage2/flexipageComponent3/runtime_sales_leadPathAssistant/runtime_sales_pathassistantPathAssistant:path/runtime_sales_pathassistantPathAssistantCard/runtime_sales_pathassistantPathAssistantHeader:header/auraIf/auraIf/uiButton:stepCompleteButton/auraHtml:button' tag='BUTTON' type='button' /&gt;" Guid="e5646d74-6802-4a96-8636-0536e7350e43" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="876944c5f17cd2db539f8d7c10eb15ec.png" xmlns="">0UzB_I0ih8kS7aOeeMmFEBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

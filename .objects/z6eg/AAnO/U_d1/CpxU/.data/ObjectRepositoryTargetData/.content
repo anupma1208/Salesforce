@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_TJJIE2RIUqmPlK5WJM4Ng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/o/Lead/pipelineInspection" CVScreenId="11c12abc-3027-438b-91a4-c4cab0c739d0" DesignTimeRectangle="652, 256, 41, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Leads' class='slds-truncate' innertext='Leads' /&gt;" Guid="ce2dea2a-6bbb-4566-8406-30e1d102d178" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lead Intelligence View | Leads | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="feb135864390a8fc4ad34abfd2adb9e9.png" xmlns="">0ULFvlmG6_EiwUUzQYuft_A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

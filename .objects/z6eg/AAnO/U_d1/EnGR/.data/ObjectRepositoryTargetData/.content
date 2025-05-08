@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bcgaqIIvM064O9Q87NbnJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HKlnNEAT/view" CVScreenId="d7ac66ca-9e06-4c03-971e-13dd14180cea" DesignTimeRectangle="1078, 560, 474, 24" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='DIV' class='primaryLabel slds-truncate slds-lookup__result-text' innertext='Tx' isleaf='0' parentid='23:2232;a' uipath-html-title='Tx' /&gt;" Guid="ab42ac15-79b8-4168-ac3f-99fc96c8e639" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LPOAjc TEWb | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1a1dd036b0320974148263409c526be2.png" xmlns="">0XrG6kTpyjEOB7PTXTzbY2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

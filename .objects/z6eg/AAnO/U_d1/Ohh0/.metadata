@@ -1,0 +1,14 @@
+﻿{
+  "Name": "zkEkC",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Ohh0VOXvx0iL9qQUhydDoQ",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/Ohh0VOXvx0iL9qQUhydDoQ",
+  "ParentRef": "WbQuJRNUSE-nX4JPHia9ag/U_d1ZoKsB06iOaCUSsI1qQ",
+  "Created": "2025-04-29T08:58:10.4036946Z",
+  "Updated": "2025-04-29T08:58:10.4036946Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

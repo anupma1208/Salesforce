@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2mftGkUmR0WGvmw0WdZdqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/o/Lead/pipelineInspection" CVScreenId="808a6b33-4e6c-4b79-aec8-53d8e52908f1" DesignTimeRectangle="709, 703, 39, 20" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="9424d953-318e-41b7-a7c3-6abf6de5fef9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lead Intelligence View | Leads | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' /&gt;", CompanyName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="17866c37024a25176f997ca45c79bade.png" xmlns="">0HIWoKVOVxEyUGZaFLnPE7g</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="zkEkC" Name="CompanyName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

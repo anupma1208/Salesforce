@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UQKFxwE7J0-AqDm-tylRyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/o/Opportunity/list" CVScreenId="8e909634-dced-4026-b8f5-fa2259c5de32" DesignTimeRectangle="1300, 390, 300, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Search this list...' class='slds-input' /&gt;" Guid="cee695a7-1a5d-4972-ba6f-0eefa95686e1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Opportunities | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1929c565caa7f199dca8927d8fe88b5b.png" xmlns="">0LpCZV9X-KkmmHSCpISVEVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

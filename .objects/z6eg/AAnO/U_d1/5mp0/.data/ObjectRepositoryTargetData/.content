@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="c6hpg6fd9EC-2gzvI5nwag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/o/Opportunity/list" CVScreenId="414dbb58-3892-4ddd-bfd7-4b5332b3c963" DesignTimeRectangle="150, 496, 24, 25" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="16a438f4-58f7-47b7-82d1-12285ff8402d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recently Viewed | Opportunities | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='A' aaname='{0}-' tableCol='1' /&gt;", CompanyName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="c056bb4c7a543bf37253cf436151fa64.png" xmlns="">0E9wOZ0d5kECOgy_cxLq3kQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="KL" Name="CompanyName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

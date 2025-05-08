@@ -1,0 +1,14 @@
+﻿{
+  "Name": "LPOAjc TEWb",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "4PC4OkwFm0a--jIQDrJ1YQ",
+  "Reference": "WbQuJRNUSE-nX4JPHia9ag/4PC4OkwFm0a--jIQDrJ1YQ",
+  "ParentRef": "WbQuJRNUSE-nX4JPHia9ag/U_d1ZoKsB06iOaCUSsI1qQ",
+  "Created": "2025-04-29T06:48:34.1785809Z",
+  "Updated": "2025-04-29T06:48:34.1785809Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

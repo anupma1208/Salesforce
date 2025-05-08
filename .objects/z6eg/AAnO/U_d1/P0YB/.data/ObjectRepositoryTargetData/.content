@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rnHQOnQ9W02HlsLsV_0GLA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Opportunity/006ak00000B5X53AAF/view" CVScreenId="a6ad9b85-64fa-40b2-966b-3d4fe499fc2c" DesignTimeRectangle="262, 523, 90, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Qualification' tag='SPAN' /&gt;" Guid="ab953b2e-6249-4d7f-8b0b-59361cbe381f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KL- | Opportunity | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="154bfc2f906b0ace832462eb0466cf27.png" xmlns="">0JIMAoK-jT0uqAfYkev0OlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

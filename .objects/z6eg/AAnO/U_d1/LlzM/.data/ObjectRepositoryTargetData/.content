@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="20U0pZUPl0iFijGUExeZcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HNA1iEAH/view" CVScreenId="27a9b38c-486d-42af-b8d1-889aa5b5ae69" DesignTimeRectangle="1578, 205, 22, 21" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl sfl-path='uiPanelManager2/forceIcon/auraIf/lightningIcon' tag='LIGHTNING-ICON' /&gt;&lt;webctrl tag='path' /&gt;" Guid="f9bbc670-81b4-4daa-bd7b-c1f1042aee40" ScopeSelectorArgument="&lt;html app='chrome.exe' title='pTfvxA mHep | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8c02abb69153ac6e57665fe5f792fcee.png" xmlns="">0eCuDj9JeT0iFr4mO3h27XA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

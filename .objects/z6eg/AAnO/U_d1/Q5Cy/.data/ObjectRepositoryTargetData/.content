@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LY_R1d-yX0-fj6PhNGMKOg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="testing-f5-dev-ed.develop.lightning.force.com/lightning/r/Lead/00Qak00000HPjHtEAL/view" CVScreenId="d5ca2451-af98-41d4-b769-738d333adde9" DesignTimeRectangle="465, 606, 174, 30" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="e2959c6c-04a7-43ee-85e1-9413b6d5bf99" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='kuThLs xvoi | Lead | Salesforce' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='A' class=' outputLookupLink slds-truncate outputLookupLink-001ak00000BgKC6AAN-99:2706;a forceOutputLookup' aaname='{0}' /&gt;", Account_Name)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="3bf9257adcaef6750f4faa8c0f9b1d32.png" xmlns="">0xWMb5SnI3kCS-AlfcR10hA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="TX_demoAccount" Name="Account_Name" />
+    </scg:List>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
