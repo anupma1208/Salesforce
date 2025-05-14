@@ -153,6 +153,9 @@
       <AssemblyReference>ReporterForUiPath</AssemblyReference>
       <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
       <AssemblyReference>Cc5c4f7e931ac4d1fa99.tl9QNdUgCH1JoBh8Ed9ij1</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="712.0000000000001,9812" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -259,6 +262,7 @@
               <Variable x:TypeArguments="x:String" Name="productId" />
               <Variable x:TypeArguments="usiascb:PricebookEntry" Name="firstentry" />
               <Variable x:TypeArguments="x:String" Name="pricebbok_entryid" />
+              <Variable x:TypeArguments="usiascb:PricebookEntry[]" Name="ListofPricebbok" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -3366,28 +3370,28 @@
             </ui:LogMessage>
             <usia:SearchUsingSOQL ActivityInstanceId="321ad5d1-652a-4b2d-9d47-8e2abf674ca4" BindingsVersion="2.1" BusinessEntityName="Pricebook entry" ConfiguredBusinessEntity="" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Search" DesignConnectionEnabled="True" DisplayName="Search Records" sap:VirtualizedContainerService.HintSize="433.6,289.6" sap2010:WorkflowViewState.IdRef="SearchUsingSOQL_1" UseRawCEQL="False">
               <usia:SearchUsingSOQL.BusinessEntity>
-                <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID120}" Name="PricebookEntry">
+                <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID121}" Name="PricebookEntry">
                   <uibi:BusinessEntity.AllFields>
                     <scg:List x:TypeArguments="uibi:EntityField" Capacity="14">
-                      <x:Reference>__ReferenceID121</x:Reference>
                       <x:Reference>__ReferenceID122</x:Reference>
                       <x:Reference>__ReferenceID123</x:Reference>
                       <x:Reference>__ReferenceID124</x:Reference>
                       <x:Reference>__ReferenceID125</x:Reference>
                       <x:Reference>__ReferenceID126</x:Reference>
+                      <x:Reference>__ReferenceID127</x:Reference>
                       <uiisi:OperationEntityField x:TypeArguments="x:String" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The token for the next page of records. Use this token to iterate through the pages until a empty list is returned." DisplayName="Next Page Token" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="nextPage" ShouldFilterOnChange="False" />
                       <uiisi:OperationEntityField x:TypeArguments="x:Boolean" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Specify if you wish to return the total count. If the end point does not support this natively, two operations will be performed in order to return the count. Also this will be done only when you are requesting the first page of a large result set" DisplayName="Return total count" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="returnTotalCount" ShouldFilterOnChange="False" />
-                      <x:Reference>__ReferenceID127</x:Reference>
                       <x:Reference>__ReferenceID128</x:Reference>
-                      <uiisi:OperationEntityField x:TypeArguments="sd:DataTable" ArgumentDirection="Out" ArgumentType="sd:DataTable" DataType="DataTable" Description="The list of records." DisplayName="List of Pricebook entry" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="resultAsDataTable" ShouldFilterOnChange="False" />
                       <x:Reference>__ReferenceID129</x:Reference>
+                      <uiisi:OperationEntityField x:TypeArguments="sd:DataTable" ArgumentDirection="Out" ArgumentType="sd:DataTable" DataType="DataTable" Description="The list of records." DisplayName="List of Pricebook entry" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="resultAsDataTable" ShouldFilterOnChange="False" />
+                      <x:Reference>__ReferenceID130</x:Reference>
                       <uiisi:OperationEntityField x:TypeArguments="x:String" ArgumentDirection="Out" ArgumentType="x:String" DataType="String" Description="The token for the next page of records. Use this token to iterate through the pages until a empty list is returned." DisplayName="Next Page Token" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Header" Name="nextPageTokenFromHeader" ShouldFilterOnChange="False" />
                     </scg:List>
                   </uibi:BusinessEntity.AllFields>
                   <uibi:BusinessEntity.EntityMetadata>
                     <uibi:EntityMetadata DisplayName="Pricebook entry" EligibleOperations="64" IsCustomEntity="False" Name="PricebookEntry">
                       <uibi:EntityMetadata.Metadata>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID120">
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID121">
                           <x:String x:Key="Object">PricebookEntry</x:String>
                           <x:String x:Key="FullPath">/PricebookEntry</x:String>
                           <x:String x:Key="Method">GET</x:String>
@@ -3431,21 +3435,8 @@
                           </scg:List>
                         </uibi:SearchableField.SearchableOperators>
                       </uibi:SearchableField>
-                      <uibi:SearchableField Mask="{x:Null}" DisplayName="Active" InputType="x:Boolean" Name="IsActive" QueryType="x:Boolean">
-                        <uibi:SearchableField.SearchableOperators>
-                          <scg:List x:TypeArguments="x:String" Capacity="1">
-                            <x:String>=</x:String>
-                          </scg:List>
-                        </uibi:SearchableField.SearchableOperators>
-                      </uibi:SearchableField>
-                      <uibi:SearchableField Mask="{x:Null}" DisplayName="Product Name" InputType="x:String" Name="Name" QueryType="x:String">
-                        <uibi:SearchableField.SearchableOperators>
-                          <scg:List x:TypeArguments="x:String" Capacity="2">
-                            <x:String>LIKE</x:String>
-                            <x:String>=</x:String>
-                          </scg:List>
-                        </uibi:SearchableField.SearchableOperators>
-                      </uibi:SearchableField>
+                      <x:Reference>__ReferenceID119</x:Reference>
+                      <x:Reference>__ReferenceID120</x:Reference>
                       <uibi:SearchableField DisplayName="System Modstamp" InputType="s:DateTime" Mask="yyyy-MM-dd'T'HH:mm:ss.fffzzz" Name="SystemModstamp" QueryType="s:DateTime">
                         <uibi:SearchableField.SearchableOperators>
                           <scg:List x:TypeArguments="x:String" Capacity="5">
@@ -3475,7 +3466,13 @@
                           </scg:List>
                         </uibi:SearchableField.SearchableOperators>
                       </uibi:SearchableField>
-                      <x:Reference>__ReferenceID119</x:Reference>
+                      <uibi:SearchableField Mask="{x:Null}" DisplayName="Product ID" InputType="x:String" Name="Product2Id" QueryType="x:String">
+                        <uibi:SearchableField.SearchableOperators>
+                          <scg:List x:TypeArguments="x:String" Capacity="1">
+                            <x:String>=</x:String>
+                          </scg:List>
+                        </uibi:SearchableField.SearchableOperators>
+                      </uibi:SearchableField>
                       <uibi:SearchableField Mask="{x:Null}" DisplayName="Created By ID" InputType="x:String" Name="CreatedById" QueryType="x:String">
                         <uibi:SearchableField.SearchableOperators>
                           <scg:List x:TypeArguments="x:String" Capacity="1">
@@ -3526,7 +3523,6 @@
                   </uibi:BusinessEntity.SearchableJoins>
                   <uibi:BusinessEntity.SelectedFields>
                     <scg:List x:TypeArguments="uibi:EntityField" Capacity="16">
-                      <x:Reference>__ReferenceID121</x:Reference>
                       <x:Reference>__ReferenceID122</x:Reference>
                       <x:Reference>__ReferenceID123</x:Reference>
                       <x:Reference>__ReferenceID124</x:Reference>
@@ -3535,6 +3531,7 @@
                       <x:Reference>__ReferenceID127</x:Reference>
                       <x:Reference>__ReferenceID128</x:Reference>
                       <x:Reference>__ReferenceID129</x:Reference>
+                      <x:Reference>__ReferenceID130</x:Reference>
                     </scg:List>
                   </uibi:BusinessEntity.SelectedFields>
                   <uibi:BusinessEntity.TelemetryProperties>
@@ -3556,9 +3553,24 @@
                 <uiisi:FilterTree Index="0" SearchableJoin="AND">
                   <uiisi:FilterTree.Filters>
                     <scg:List x:TypeArguments="uiisi:Filter" Capacity="4">
-                      <uiisi:Filter ComputedValue="{x:Null}" Criteria="Product2Id" Operator="=">
+                      <uiisi:Filter ComputedValue="{x:Null}" Criteria="Name" Operator="=">
                         <uiisi:Filter.SearchableField>
-                          <uibi:SearchableField Mask="{x:Null}" x:Name="__ReferenceID119" DisplayName="Product ID" InputType="x:String" Name="Product2Id" QueryType="x:String">
+                          <uibi:SearchableField Mask="{x:Null}" x:Name="__ReferenceID120" DisplayName="Product Name" InputType="x:String" Name="Name" QueryType="x:String">
+                            <uibi:SearchableField.SearchableOperators>
+                              <scg:List x:TypeArguments="x:String" Capacity="2">
+                                <x:String>LIKE</x:String>
+                                <x:String>=</x:String>
+                              </scg:List>
+                            </uibi:SearchableField.SearchableOperators>
+                          </uibi:SearchableField>
+                        </uiisi:Filter.SearchableField>
+                        <uiisi:Filter.Value>
+                          <InArgument x:TypeArguments="x:String">10 Tablet</InArgument>
+                        </uiisi:Filter.Value>
+                      </uiisi:Filter>
+                      <uiisi:Filter ComputedValue="{x:Null}" Criteria="IsActive" Operator="=">
+                        <uiisi:Filter.SearchableField>
+                          <uibi:SearchableField Mask="{x:Null}" x:Name="__ReferenceID119" DisplayName="Active" InputType="x:Boolean" Name="IsActive" QueryType="x:Boolean">
                             <uibi:SearchableField.SearchableOperators>
                               <scg:List x:TypeArguments="x:String" Capacity="1">
                                 <x:String>=</x:String>
@@ -3567,9 +3579,7 @@
                           </uibi:SearchableField>
                         </uiisi:Filter.SearchableField>
                         <uiisi:Filter.Value>
-                          <InArgument x:TypeArguments="x:String">
-                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">productId</CSharpValue>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                         </uiisi:Filter.Value>
                       </uiisi:Filter>
                     </scg:List>
@@ -3581,7 +3591,7 @@
               </usia:SearchUsingSOQL.FilterTree>
               <usia:SearchUsingSOQL.SelectedFields>
                 <scg:List x:TypeArguments="uibi:EntityField" Capacity="9">
-                  <uiisi:OperationEntityField x:TypeArguments="x:Int32" x:Name="__ReferenceID121" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The maximum number of records to return." DisplayName="Max records" FormDataType="ExpressionTextBox" InArgumentValue="1" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Undefined" Name="maximumRecordsReturned" ShouldFilterOnChange="False">
+                  <uiisi:OperationEntityField x:TypeArguments="x:Int32" x:Name="__ReferenceID122" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The maximum number of records to return." DisplayName="Max records" FormDataType="ExpressionTextBox" InArgumentValue="1" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Undefined" Name="maximumRecordsReturned" ShouldFilterOnChange="False">
                     <uiisi:OperationEntityField.ArgumentValue>
                       <InArgument x:TypeArguments="x:Int32">1</InArgument>
                     </uiisi:OperationEntityField.ArgumentValue>
@@ -3589,24 +3599,24 @@
                       <Literal x:TypeArguments="x:Int32">1</Literal>
                     </uiisi:OperationEntityField.Value>
                   </uiisi:OperationEntityField>
-                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID122" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="A comma-separated list of one or more fields to return in the response for the object selected. For example, if Contact object is selected, fields can be 'id,FirstName,LastName'. We can also use FIELDS(ALL), FIELDS(STANDARD), FIELDS(CUSTOM)" DisplayName="Fields" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="fields" ShouldFilterOnChange="False" />
-                  <uiisi:OperationEntityField x:TypeArguments="x:Boolean" x:Name="__ReferenceID123" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Specify if deleted objects should be included in the search." DisplayName="Include deleted" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="includeDeleted" ShouldFilterOnChange="False" />
-                  <uiisi:OperationEntityField x:TypeArguments="x:Boolean" x:Name="__ReferenceID124" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Sort nulls last." DisplayName="Nulls last" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="nullsLast" ShouldFilterOnChange="False" />
-                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID125" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The field(s) to order by. For example to order by Id ascending use 'Id asc'. A unique value (such as ID) must be provided to support pagination above 1000 records" DisplayName="Order by" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="orderBy" ShouldFilterOnChange="False" />
-                  <uiisi:OperationEntityField x:TypeArguments="x:Int32" x:Name="__ReferenceID126" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The page size for pagination, which defaults to 200 if not supplied" DisplayName="Page size" FormDataType="ExpressionTextBox" InArgumentValue="50" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="pageSize" ShouldFilterOnChange="False">
+                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID123" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="A comma-separated list of one or more fields to return in the response for the object selected. For example, if Contact object is selected, fields can be 'id,FirstName,LastName'. We can also use FIELDS(ALL), FIELDS(STANDARD), FIELDS(CUSTOM)" DisplayName="Fields" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="fields" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="x:Boolean" x:Name="__ReferenceID124" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Specify if deleted objects should be included in the search." DisplayName="Include deleted" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="includeDeleted" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="x:Boolean" x:Name="__ReferenceID125" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Sort nulls last." DisplayName="Nulls last" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="nullsLast" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID126" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The field(s) to order by. For example to order by Id ascending use 'Id asc'. A unique value (such as ID) must be provided to support pagination above 1000 records" DisplayName="Order by" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="orderBy" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="x:Int32" x:Name="__ReferenceID127" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The page size for pagination, which defaults to 200 if not supplied" DisplayName="Page size" FormDataType="ExpressionTextBox" InArgumentValue="50" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="pageSize" ShouldFilterOnChange="False">
                     <uiisi:OperationEntityField.ArgumentValue>
                       <InArgument x:TypeArguments="x:Int32">50</InArgument>
                     </uiisi:OperationEntityField.ArgumentValue>
                   </uiisi:OperationEntityField>
-                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID127" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Where" DisplayName="Where" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="where" ShouldFilterOnChange="False" />
-                  <uiisi:OperationEntityField x:TypeArguments="usiascb:PricebookEntry" OutArgumentValue="{x:Reference __ReferenceID117}" Value="{x:Reference __ReferenceID118}" x:Name="__ReferenceID128" ArgumentDirection="Out" ArgumentType="usiascb:PricebookEntry" DataType="PricebookEntry" Description="The first record returned." DisplayName="First Pricebook entry Record" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="firstResultAsEntity" ShouldFilterOnChange="False">
+                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID128" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Where" DisplayName="Where" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsParameter="True" IsPriority="False" IsSelected="False" Location="Query" Name="where" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="usiascb:PricebookEntry" x:Name="__ReferenceID129" ArgumentDirection="Out" ArgumentType="usiascb:PricebookEntry" DataType="PricebookEntry" Description="The first record returned." DisplayName="First Pricebook entry Record" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="firstResultAsEntity" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="usiascb:PricebookEntry[]" OutArgumentValue="{x:Reference __ReferenceID117}" Value="{x:Reference __ReferenceID118}" x:Name="__ReferenceID130" ArgumentDirection="Out" ArgumentType="usiascb:PricebookEntry[]" DataType="PricebookEntry[]" Description="The list of records." DisplayName="List of Pricebook entry" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="resultAsEntityCollection" ShouldFilterOnChange="False">
                     <uiisi:OperationEntityField.ArgumentValue>
-                      <OutArgument x:TypeArguments="usiascb:PricebookEntry" x:Name="__ReferenceID117">
-                        <CSharpReference x:TypeArguments="usiascb:PricebookEntry" x:Name="__ReferenceID118" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">firstentry</CSharpReference>
+                      <OutArgument x:TypeArguments="usiascb:PricebookEntry[]" x:Name="__ReferenceID117">
+                        <CSharpReference x:TypeArguments="usiascb:PricebookEntry[]" x:Name="__ReferenceID118" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">ListofPricebbok</CSharpReference>
                       </OutArgument>
                     </uiisi:OperationEntityField.ArgumentValue>
                   </uiisi:OperationEntityField>
-                  <uiisi:OperationEntityField x:TypeArguments="usiascb:PricebookEntry[]" x:Name="__ReferenceID129" ArgumentDirection="Out" ArgumentType="usiascb:PricebookEntry[]" DataType="PricebookEntry[]" Description="The list of records." DisplayName="List of Pricebook entry" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="resultAsEntityCollection" ShouldFilterOnChange="False" />
                 </scg:List>
               </usia:SearchUsingSOQL.SelectedFields>
               <usia:SearchUsingSOQL.TelemetryProperties>
@@ -3628,19 +3638,19 @@
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">firstentry.Id.ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">ListofPricebbok != null &amp;&amp; ListofPricebbok.Any() ? ListofPricebbok.First().Id : null</CSharpValue>
                 </InArgument>
               </Assign.Value>
             </Assign>
             <usia:InsertRecord ActivityInstanceId="48d75034-aa70-45c1-a7d9-10fc22df95c0" BindingsVersion="2.1" BusinessEntityName="Order item" ConfiguredBusinessEntity="" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Insert Record product" sap:VirtualizedContainerService.HintSize="433.6,364" sap2010:WorkflowViewState.IdRef="InsertRecord_4">
               <usia:InsertRecord.BusinessEntity>
-                <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID134}" Name="OrderItem">
+                <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID135}" Name="OrderItem">
                   <uibi:BusinessEntity.AllFields>
                     <scg:List x:TypeArguments="uibi:EntityField" Capacity="54">
-                      <x:Reference>__ReferenceID135</x:Reference>
                       <x:Reference>__ReferenceID136</x:Reference>
                       <x:Reference>__ReferenceID137</x:Reference>
                       <x:Reference>__ReferenceID138</x:Reference>
+                      <x:Reference>__ReferenceID139</x:Reference>
                       <uiisi:OperationEntityField x:TypeArguments="x:Boolean" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Activated" DisplayName="Activated" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="True" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="SBQQ__Activated__c" ShouldFilterOnChange="False" />
                       <uiisi:OperationEntityField x:TypeArguments="x:String" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Activation Status" DisplayName="Activation Status" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="True" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="SBQQ__Status__c" ShouldFilterOnChange="False">
                         <uiisi:OperationEntityField.EnumValues>
@@ -3811,7 +3821,7 @@
                   <uibi:BusinessEntity.EntityMetadata>
                     <uibi:EntityMetadata DisplayName="Order item" EligibleOperations="1" IsCustomEntity="False" Name="OrderItem">
                       <uibi:EntityMetadata.Metadata>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID134">
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID135">
                           <x:String x:Key="Object">OrderItem</x:String>
                           <x:String x:Key="FullPath">/OrderItem</x:String>
                           <x:String x:Key="Method">POST</x:String>
@@ -3822,10 +3832,10 @@
                   </uibi:BusinessEntity.EntityMetadata>
                   <uibi:BusinessEntity.SelectedFields>
                     <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
-                      <x:Reference>__ReferenceID135</x:Reference>
                       <x:Reference>__ReferenceID136</x:Reference>
                       <x:Reference>__ReferenceID137</x:Reference>
                       <x:Reference>__ReferenceID138</x:Reference>
+                      <x:Reference>__ReferenceID139</x:Reference>
                     </scg:List>
                   </uibi:BusinessEntity.SelectedFields>
                   <uibi:BusinessEntity.TelemetryProperties>
@@ -3845,22 +3855,22 @@
               </usia:InsertRecord.DesignConnectionRequest>
               <usia:InsertRecord.SelectedFields>
                 <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
-                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID135" ArgumentDirection="Out" ArgumentType="x:String" DataType="String" Description="Order Product ID" DisplayName="Order Product ID" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="True" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="Id" ShouldFilterOnChange="False" />
-                  <uiisi:OperationEntityField x:TypeArguments="x:String" InArgumentValue="{x:Reference __ReferenceID130}" Value="{x:Reference __ReferenceID131}" x:Name="__ReferenceID136" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Order ID" DisplayName="Order ID" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Body" Name="OrderId" ShouldFilterOnChange="False">
+                  <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID136" ArgumentDirection="Out" ArgumentType="x:String" DataType="String" Description="Order Product ID" DisplayName="Order Product ID" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="True" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Body" Name="Id" ShouldFilterOnChange="False" />
+                  <uiisi:OperationEntityField x:TypeArguments="x:String" InArgumentValue="{x:Reference __ReferenceID131}" Value="{x:Reference __ReferenceID132}" x:Name="__ReferenceID137" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Order ID" DisplayName="Order ID" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Body" Name="OrderId" ShouldFilterOnChange="False">
                     <uiisi:OperationEntityField.ArgumentValue>
-                      <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID130">
-                        <CSharpValue x:TypeArguments="x:String" x:Name="__ReferenceID131" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">orderId</CSharpValue>
+                      <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID131">
+                        <CSharpValue x:TypeArguments="x:String" x:Name="__ReferenceID132" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">orderId</CSharpValue>
                       </InArgument>
                     </uiisi:OperationEntityField.ArgumentValue>
                   </uiisi:OperationEntityField>
-                  <uiisi:OperationEntityField x:TypeArguments="x:String" InArgumentValue="{x:Reference __ReferenceID132}" Value="{x:Reference __ReferenceID133}" x:Name="__ReferenceID137" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Price Book Entry ID" DisplayName="Price Book Entry ID" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Body" Name="PricebookEntryId" ShouldFilterOnChange="False">
+                  <uiisi:OperationEntityField x:TypeArguments="x:String" InArgumentValue="{x:Reference __ReferenceID133}" Value="{x:Reference __ReferenceID134}" x:Name="__ReferenceID138" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Price Book Entry ID" DisplayName="Price Book Entry ID" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Body" Name="PricebookEntryId" ShouldFilterOnChange="False">
                     <uiisi:OperationEntityField.ArgumentValue>
-                      <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID132">
-                        <CSharpValue x:TypeArguments="x:String" x:Name="__ReferenceID133" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">pricebbok_entryid</CSharpValue>
+                      <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID133">
+                        <CSharpValue x:TypeArguments="x:String" x:Name="__ReferenceID134" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">pricebbok_entryid</CSharpValue>
                       </InArgument>
                     </uiisi:OperationEntityField.ArgumentValue>
                   </uiisi:OperationEntityField>
-                  <uiisi:OperationEntityField x:TypeArguments="x:Double" x:Name="__ReferenceID138" ArgumentDirection="In" ArgumentType="x:Double" DataType="Double" Description="Quantity" DisplayName="Quantity" FormDataType="ExpressionTextBox" InArgumentValue="1" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Body" Name="Quantity" ShouldFilterOnChange="False">
+                  <uiisi:OperationEntityField x:TypeArguments="x:Double" x:Name="__ReferenceID139" ArgumentDirection="In" ArgumentType="x:Double" DataType="Double" Description="Quantity" DisplayName="Quantity" FormDataType="ExpressionTextBox" InArgumentValue="1" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Body" Name="Quantity" ShouldFilterOnChange="False">
                     <uiisi:OperationEntityField.ArgumentValue>
                       <InArgument x:TypeArguments="x:Double">1</InArgument>
                     </uiisi:OperationEntityField.ArgumentValue>

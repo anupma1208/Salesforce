@@ -68,9 +68,15 @@
       },
       {
         "editingStatus": "InProgress",
+        "testCaseId": "1aa03878-731c-4046-a09e-1818a8b8a938",
+        "testCaseType": "TestCase",
+        "fileName": "Testcase2\\Lead - Copy (1).xaml"
+      },
+      {
+        "editingStatus": "InProgress",
         "testCaseId": "5d977153-bb52-4154-aa7d-39c26c3cefd0",
         "testCaseType": "TestCase",
-        "fileName": "Testcases\\Account - Copy (1).xaml"
+        "fileName": "Testcase2\\Account - Copy (1).xaml"
       }
     ],
     "saveToCloud": false
