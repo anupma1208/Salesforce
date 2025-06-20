@@ -70,6 +70,8 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>ReporterForUiPath.Enums</x:String>
       <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -152,9 +154,10 @@
       <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
       <AssemblyReference>TestAutomationProject21.Core</AssemblyReference>
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="712.0000000000001,7828.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="712.0000000000001,7308.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
       <Variable x:TypeArguments="x:String" Default="3MVG9JJwBBbcN47JT2C90eqhiaYTCzuO9uf6dGSFYDMFwXPxgnsdvk2yCQlG19jL2l.cw7Q9wikgF3Hv05oKp" Name="consumerkey" />
@@ -219,19 +222,19 @@
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
               <ui:AssignOperation.To>
                 <OutArgument x:TypeArguments="ss:SecureString">
-                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">SecurityToken</CSharpReference>
+                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">SecurityToken</CSharpReference>
                 </OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
                 <InArgument x:TypeArguments="ss:SecureString">
-                  <CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">new System.Net.NetworkCredential("", "bWubntZDVAgZTvdQljgj1EDh").SecurePassword</CSharpValue>
+                  <CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">new System.Net.NetworkCredential("", "YhSAsXJnrOIndMEnBm1Ow65p").SecurePassword</CSharpValue>
                 </InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
               <ui:AssignOperation.To>
                 <OutArgument x:TypeArguments="ss:SecureString">
-                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">Password</CSharpReference>
+                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_26">Password</CSharpReference>
                 </OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
@@ -243,7 +246,7 @@
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
               <ui:AssignOperation.To>
                 <OutArgument x:TypeArguments="ss:SecureString">
-                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">ConsumerSecreat</CSharpReference>
+                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">ConsumerSecreat</CSharpReference>
                 </OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
@@ -256,13 +259,13 @@
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
     </Sequence>
-    <usa:SalesforceApplicationScope CustomServer="{x:Null}" ExistingConnectionService="{x:Null}" Port="{x:Null}" ProxyPassword="{x:Null}" ProxyServer="{x:Null}" ProxyUser="{x:Null}" SalesforceConnection="{x:Null}" Sforce_Auto_Assign="{x:Null}" ConsumerKey="3MVG9JJwBBbcN47JT2C90eqhiaYTCzuO9uf6dGSFYDMFwXPxgnsdvk2yCQlG19jL2l.cw7Q9wikgF3Hv05oKp" DisplayName="Salesforce Application Scope" sap:VirtualizedContainerService.HintSize="512,7108.8" sap2010:WorkflowViewState.IdRef="SalesforceApplicationScope_1" ReportApiErrorAsException="False" ServerType="Live" TelemetryEnabled="True" UseStrongDataTyping="False" Username="barwalrohitthakur@gmail.com">
+    <usa:SalesforceApplicationScope CustomServer="{x:Null}" ExistingConnectionService="{x:Null}" Port="{x:Null}" ProxyPassword="{x:Null}" ProxyServer="{x:Null}" ProxyUser="{x:Null}" SalesforceConnection="{x:Null}" Sforce_Auto_Assign="{x:Null}" ConsumerKey="3MVG9JJwBBbcN47JT2C90eqhiaYTCzuO9uf6dGSFYDMFwXPxgnsdvk2yCQlG19jL2l.cw7Q9wikgF3Hv05oKp" DisplayName="Salesforce Application Scope" sap:VirtualizedContainerService.HintSize="512,6588.8" sap2010:WorkflowViewState.IdRef="SalesforceApplicationScope_1" ReportApiErrorAsException="False" ServerType="Live" TelemetryEnabled="True" UseStrongDataTyping="False" Username="barwalrohitthakur@gmail.com">
       <usa:SalesforceApplicationScope.Body>
         <ActivityAction x:TypeArguments="usc:IConnectionService">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="usc:IConnectionService" Name="SalesforceConnection" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,6974.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,6454.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="AccountName" />
               <Variable x:TypeArguments="x:String" Name="opportunityName" />
@@ -317,7 +320,7 @@
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <usia:CreateAccount ActivityInstanceId="3a68800a-3ca6-42c5-9089-b70d12756d90" BindingsVersion="2.1" BusinessEntityName="Account" ConfiguredBusinessEntity="curated_account" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Create Account" sap:VirtualizedContainerService.HintSize="382.4,424" sap2010:WorkflowViewState.IdRef="CreateAccount_1">
+            <usia:CreateAccount Language="{x:Null}" ActivityInstanceId="3a68800a-3ca6-42c5-9089-b70d12756d90" BindingsVersion="2.1" BusinessEntityName="Account" ConfiguredBusinessEntity="curated_account" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Create Account" sap:VirtualizedContainerService.HintSize="382.4,164" sap2010:WorkflowViewState.IdRef="CreateAccount_1">
               <usia:CreateAccount.BusinessEntity>
                 <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID6}" Name="curated_account">
                   <uibi:BusinessEntity.AllFields>
@@ -691,7 +694,7 @@
               </ra:StepStatus.TestId>
             </ra:StepStatus>
             <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <usia:CreateContact ActivityInstanceId="8e338efe-a7cd-40c7-b7ee-a13edc42def5" BindingsVersion="2.1" BusinessEntityName="Contact" ConfiguredBusinessEntity="curated_contact" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Create Contact" sap:VirtualizedContainerService.HintSize="382.4,424" sap2010:WorkflowViewState.IdRef="CreateContact_1">
+            <usia:CreateContact Language="{x:Null}" ActivityInstanceId="8e338efe-a7cd-40c7-b7ee-a13edc42def5" BindingsVersion="2.1" BusinessEntityName="Contact" ConfiguredBusinessEntity="curated_contact" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Create Contact" sap:VirtualizedContainerService.HintSize="382.4,164" sap2010:WorkflowViewState.IdRef="CreateContact_1">
               <usia:CreateContact.BusinessEntity>
                 <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID29}" Name="curated_contact">
                   <uibi:BusinessEntity.AllFields>
@@ -995,7 +998,7 @@
                 </InArgument>
               </ra:StepStatus.TestId>
             </ra:StepStatus>
-            <usia:CreateOpportunity ActivityInstanceId="ab7b0377-4ff8-45f3-8b86-12d53e2fb80e" BindingsVersion="2.1" BusinessEntityName="Opportunity" ConfiguredBusinessEntity="curated_opportunity" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Create Opportunity" sap:VirtualizedContainerService.HintSize="382.4,424" sap2010:WorkflowViewState.IdRef="CreateOpportunity_1">
+            <usia:CreateOpportunity Language="{x:Null}" ActivityInstanceId="ab7b0377-4ff8-45f3-8b86-12d53e2fb80e" BindingsVersion="2.1" BusinessEntityName="Opportunity" ConfiguredBusinessEntity="curated_opportunity" ConnectionId="c5c4f7e9-31ac-4d1f-a99d-52bca0e90ed0" Connector="uipath-salesforce-sfdc" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Create Opportunity" sap:VirtualizedContainerService.HintSize="382.4,424" sap2010:WorkflowViewState.IdRef="CreateOpportunity_1">
               <usia:CreateOpportunity.BusinessEntity>
                 <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID46}" Name="curated_opportunity">
                   <uibi:BusinessEntity.AllFields>
@@ -2816,7 +2819,7 @@
         </InArgument>
       </usa:SalesforceApplicationScope.ConsumerSecret>
       <usa:SalesforceApplicationScope.DesignSalesforceConnectionInfo>
-        <usm:SalesforceConnectionInfo CustomInstanceEndpoint="{x:Null}" ProxyPassword="{x:Null}" ProxyPort="{x:Null}" ProxyServer="{x:Null}" ProxyUser="{x:Null}" SforceAutoAssign="{x:Null}" ConsumerKey="3MVG9JJwBBbcN47JT2C90eqhiaYTCzuO9uf6dGSFYDMFwXPxgnsdvk2yCQlG19jL2l.cw7Q9wikgF3Hv05oKp" EncryptedConsumerSecret="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdmVNhOsBnkCqTF20RCOXRQAAAAACAAAAAAAQZgAAAAEAACAAAABVYjN3PTLF56dEetYKyv+9F06eQg+YZi18CuED/Bd5IQAAAAAOgAAAAAIAACAAAAABmNN0FxWPkjh6OINiwn1XqdlJsiubJm25oKiFpfqz01AAAACJVFXXPduEfVRYlxN3UvJHVrS7vgfVZM2HGXPxBSLCZ02RDJRV05hqqPJ5LNNESkRioqmHjakW5pRjjM+rjvOblTTYoB6HJAAJ1IR2UKoN6UAAAAB3Rqu57XAagnF6mvdd4dHND5b4KChLkMe5lwtc86hYlREfivEVP9oka3QtFn80encKU4PtiYzl/BCKjnCmL5RD" EncryptedProxyUserPassword="" EncryptedSecurityToken="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdmVNhOsBnkCqTF20RCOXRQAAAAACAAAAAAAQZgAAAAEAACAAAABBc0WRF/4r2n+s9A3DrCjirRMhSsDYJAzHMQk8gndshwAAAAAOgAAAAAIAACAAAAAmZetlj8fDrd4vu0q4cOmcKoiwoVdFRIAE8E2Vo/h6jyAAAADML9MviJJXEK5wV8IkVPTl/J+9Rognl/BH4V0uNvVVq0AAAAC7e8CymHvU1kcwx79lfXjiRVQwxRWxnXRbvQQD8qwBqx354cGAUh5LhkCUectZngsudaTnpjUtkmh6xIiT5YN1" ServerInstance="Live" UserName="barwalrohitthakur@gmail.com">
+        <usm:SalesforceConnectionInfo CustomInstanceEndpoint="{x:Null}" ProxyPassword="{x:Null}" ProxyPort="{x:Null}" ProxyServer="{x:Null}" ProxyUser="{x:Null}" SforceAutoAssign="{x:Null}" ConsumerKey="3MVG9JJwBBbcN47JT2C90eqhiaYTCzuO9uf6dGSFYDMFwXPxgnsdvk2yCQlG19jL2l.cw7Q9wikgF3Hv05oKp" EncryptedConsumerSecret="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdmVNhOsBnkCqTF20RCOXRQAAAAACAAAAAAAQZgAAAAEAACAAAACTvHGJYb+lq3ToY0EMuQtahhcyruocqy1OsUqFz6o65QAAAAAOgAAAAAIAACAAAAAIHe5xztZrn99ttW7hExZWzOSXcy6sUFyZ0zZIZsQ4uFAAAADQ0nYumXB3aqslv9kDjg0ErTFzBs8WJjltVAxKjgcbZOSgiBJXjhRyKtSoV+DT9CN4u4geoY4Y484RSkO96/DbJVQ68wL1VJ5LBRMEjF5U/UAAAAARcsZe5RW/7WrjO5sTOlQcZzPPveizyPNWBviSFewm/dUhlgzIhWsETXsnlW1izz24hb/8OpybWfolaA5MCQkP" EncryptedProxyUserPassword="" EncryptedSecurityToken="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdmVNhOsBnkCqTF20RCOXRQAAAAACAAAAAAAQZgAAAAEAACAAAAAde6mchNSQxAb/4J28A6/krNywzS+s4eXJLuczmXSQhAAAAAAOgAAAAAIAACAAAAB2xQxQ+QRm2NRKugzzgDxpK/UVZFCxB9kDMmMUeRlXWyAAAACdNIDD5L7jvtRa3dI376Yg0Zl66p//e/WrzjEXIGsdaEAAAABG+IncndKCorfmAq39hbnTVZ/49lz272RH6JC45qVUasGzIOHto6kbDXanhhqEluqxg8BGR+P5KVy7cxugOHNT" ServerInstance="Live" UserName="barwalrohitthakur@gmail.com">
           <usm:SalesforceConnectionInfo.ConsumerSecret>
             <ss:SecureString />
           </usm:SalesforceConnectionInfo.ConsumerSecret>
